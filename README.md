@@ -20,3 +20,5 @@
 - [w02 02/bootstrap.html](/w02/02/bootstrap.html)
 - [w02 02/navbar.html](/w02/02/navbar.html)
 - [w02 03/index.html](/w02/03/index.html)
+- [w02 04/index.html](/w02/04/index.html)
+
