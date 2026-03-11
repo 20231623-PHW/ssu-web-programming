@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍및실습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <p>웹프로그래밍및실습 공지사항 <button onclick="modal.showModal()">열기</button></p>
+
+    </div>
+    <header>
+        <div class="header">
+            <div class="header-name">
+                <img src="ssu.png" alt="SSU Logo">
+                숭실대학교 웹프로그래밍및실습
+            </div>
+
+            <div class="header-action">
+                <div class="header-user">
+                    박현우
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-user-round-icon lucide-circle-user-round">
+                        <path d="M18 20a6 6 0 0 0-12 0" />
+                        <circle cx="12" cy="10" r="4" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="https://scatch.ssu.ac.kr/wp-content/uploads/sites/5/2022/04/%EB%B4%84_2-1024x576.jpg" alt="">
+    </div>
+
+    <main>
+        <div class="content">
+            <h1>웹프로그래밍및실습 랜딩페이지 제목 (h1)</h1>
+
+            <details>
+                <summary>숭실대학교 설명</summary>
+                <p>서울특별시 동작구에 있는 4년제 사립 종합대학이다. 숭실대는 1890년대 개교한 한국[9] 최초의 대학부(大學部)로 알려져있다.[10] 1938년 일제의 신사참배 강요에 맞서
+                    평양부에서
+                    자진폐교
+                    후 1954년 서울에서 재건됐다. 그 전신이자 기원은 평양부의 평양숭실학당으로 보고 있기 때문에 성균관대(조선 성균관 계승), 가톨릭대, 연세대, 배재대, 이화여대, 감신대
+                    다음으로
+                    대한민국에서
+                    일곱 번째로 오래된 고등교육기관이다. 오래된 개신교 미션스쿨이기도 하다. 그러나 후술할 종교적 포용성으로 인하여 타종교 동아리(불교 등), 주류 동아리 활동, 축제에서의 음주문화
+                    등이
+                    폭넓게
+                    허용된다. 채플도 일반 강연 비중이 높다.</p>
+            </details>
+
+            <p>HTML에는 다양한 태그가 있다.</p>
+
+            <section>
+                <h2>택스트 관련 태그들</h2>
+                <p>HTML에서는 텍스트를 <strong>굴게</strong> 처리하거나, <em>기울여</em> 처리하거나, <mark>강조</mark>하는 등 텍스트에 여러 효과를 적용할 수 있다.
+                </p>
+                <ul>
+                    <li><strong>굵게</strong></li>
+                    <li><em>기울게</em></li>
+                    <li><mark>형광펜</mark></li>
+                    <li><b>단순 굵게</b></li>
+                    <li><i>단순 기울게</i></li>
+                    <li><s>취소선</s></li>
+                    <li><u>밑줄</u></li>
+                    <li><small>작은 글씨</small></li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h2>링크와 이미지</h2>
+                <p>이 링크는 <a href="https://www.ssu.ac.kr" target="_blank">숭실대학교 홈페이지</a>로 연결된다.</p>
+
+                <p>이미지 또한 삽입이 가능하다.</p>
+                <img src="ssu.png" alt="숭실대학교 로고" width="300" height="100">
+
+                <br />
+                <p>이미지 자체에 링크도 걸 수 있다.</p>
+                <a href="https://www.ssu.ac.kr" target="_blank">
+                    <img src="ssu.png" alt="숭실대학교 로고" width="300" height="100">
+                </a>
+            </section>
+
+            <section>
+                <h2>리스트</h2>
+                <p>HTML에서는 순서가 있는 리스트와 순서가 없는 리스트를 만들 수 있다.</p>
+                <h3>순서가 없는 리스트 (ul)</h3>
+                <ul>
+                    <li>첫 번째 아이템</li>
+                    <li>두 번째 아이템</li>
+                    <li>세 번째 아이템</li>
+                </ul>
+
+                <h3>순서가 있는 리스트 (ol)</h3>
+                <ol>
+                    <li>첫 번째 아이템</li>
+                    <li>두 번째 아이템</li>
+                    <li>세 번째 아이템</li>
+                </ol>
+
+            </section>
+
+            <section>
+                <h2>테이블</h2>
+                <p>HTML에서는 테이블을 만들어 데이터를 표시할 수 있다.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>나이</th>
+                            <th>전공</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>박현우</td>
+                            <td>22</td>
+                            <td>컴퓨터공학과</td>
+                        </tr>
+                        <tr>
+                            <td>김민수</td>
+                            <td>21</td>
+                            <td>전자공학과</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h3>colspan 또는 rowspan 를 사용하면 셀 병합도 가능하다</h3>
+
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th colspan="2">이름</th>
+                            <th>나이</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>박</td>
+                            <td>현우</td>
+                            <td>2?</td>
+                        </tr>
+                        <tr>
+                            <td>숭</td>
+                            <td>실실대</td>
+                            <td>2?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
+                <h2>상호작용을 위한 다양한 Form 태그도 있다</h2>
+
+                <p>input: <input type="text" placeholder="placeholder"></p>
+                <p>자동 완성도 가능하다</p>
+                <input list="browsers" placeholder="자동 완성 지원">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                </datalist>
+
+                <p>button: <button>Button</button></p>
+                <textarea name="" id="" placeholder="textarea"></textarea>
+
+                <select name="fruit">
+                    <option value="apple">사과</option>
+                    <option value="banana">바나나</option>
+                </select>
+
+
+                <select>
+                    <optgroup label="과일">
+                        <option>사과</option>
+                        <option>바나나</option>
+                    </optgroup>
+
+                    <optgroup label="채소">
+                        <option>당근</option>
+                    </optgroup>
+                </select>
+
+
+
+                <p>아래는 값 수준을 표시하는 meter 이며</p>
+                <meter value="0.6">60%</meter>
+
+                <p>아래는 진행상황을 표시하는 progress 이다</p>
+                <progress id="file" max="100" value="70">70%</progress>
+            </section>
+
+
+            <section>
+                <h2>외부 소스 (유튜브 등)</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KYFvze2W_1A?si=8AYFPsfU9x75fynl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.instagram.com/p/DVaMQ7GkjqB/embed" frameborder="0" scrolling="auto"
+                    allowtransparency="true" width="400px" height="500px"></iframe>
+
+            </section>
+
+            <section>
+                <h2>더 알아보기</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Elements" target="_blank">MDN
+                            HTML 태그 레퍼런스
+                            문서</a> - 사실상 공식 수준으로 참고할 수 있는 레퍼런스 사이트</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        숭실대학교 글로벌미디어학부 박현우
+    </footer>
+
+
+
+
+
+    <dialog id="modal">
+        HTML의 dialog 태그 사용
+        <button onclick="modal.close()">닫기</button>
+    </dialog>
+
+
+</body>
+
+</html>
