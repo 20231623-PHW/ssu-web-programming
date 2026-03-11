@@ -10,6 +10,13 @@
 
 ### 1주차
 
-- [w01-01](/w01/01/index.html)
-- [w01-02](/w01/02/index.html)
-- [w01-02](/w01/03/index.html)
+- [w01 01](/w01/01/index.html)
+- [w01 02](/w01/02/index.html)
+- [w01 02](/w01/03/index.html)
+
+### 2주차
+
+- [w02 01/login.html](/w02/01/login.html)
+- [w02 02/bootstrap.html](/w02/02/bootstrap.html)
+- [w02 02/navbar.html](/w02/02/navbar.html)
+- [w02 03/index.html](/w02/03/index.html)
