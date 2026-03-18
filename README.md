@@ -6,6 +6,8 @@
 
 이 레포지토리는 숭실대학교 글로벌미디어학부 전공필수 `웹프로그래밍및실습` 과목에서 사용한 코드를 모아둔 레포지토리입니다.
 
+> [자기소개 페이지](/introduce/index.html)
+
 ## 주차별 페이지
 
 ### 1주차
@@ -22,3 +24,8 @@
 - [w02 03/index.html](/w02/03/index.html)
 - [w02 04/index.html](/w02/04/index.html)
 
+### 3주차
+
+- [w03 01](/w03/01/index.html)
+- w03 02 (자바스크립트 파일)
+- [Introduce](/introduce/index.html)

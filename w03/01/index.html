@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 연습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <p class="eyebrow">Week 03</p>
+        <h1 id="main-title">CSS 선택자 연습장</h1>
+        <p class="intro">
+            태그, 클래스, 아이디, 결합자, 속성 선택자, 가상 클래스를 한 번에 확인해봅시다.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="example-box">
+            <h2>1. 기본 선택자</h2>
+            <p>이 문단은 <strong>태그 선택자</strong>의 영향을 받습니다.</p>
+            <p class="highlight">이 문단은 <code>.highlight</code> 클래스를 가지고 있습니다.</p>
+            <p class="highlight important">이 문단은 두 개의 클래스를 함께 사용합니다.</p>
+            <div id="special-box">이 박스는 <code>#special-box</code> 아이디 선택자로 꾸며집니다.</div>
+        </section>
+
+        <section class="example-box notice-box">
+            <h2>2. 자손 / 자식 선택자</h2>
+            <div class="notice">
+                <p>공지사항 안의 <strong>strong 태그</strong>는 자손 선택자로 꾸며집니다.</p>
+                <ul class="menu">
+                    <li>첫 번째 메뉴</li>
+                    <li>두 번째 메뉴</li>
+                    <li>
+                        세 번째 메뉴
+                        <ul>
+                            <li>중첩 메뉴 1</li>
+                            <li>중첩 메뉴 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="example-box sibling-demo">
+            <h2>3. 형제 선택자</h2>
+            <h3>소제목 A</h3>
+            <p>이 문단은 <code>h3 + p</code> 인접 형제 선택자의 대상입니다.</p>
+            <p class="note">이 문단은 일반 형제 선택자 <code>h3 ~ .note</code>의 대상입니다.</p>
+            <p>이 문단은 일반 문단입니다.</p>
+        </section>
+
+        <section class="example-box attribute-demo">
+            <h2>4. 속성 선택자</h2>
+            <div class="link-group">
+                <a href="https://www.ssu.ac.kr" target="_blank">숭실대학교 홈페이지</a>
+                <a href="#main-title">페이지 상단으로 이동</a>
+                <a href="mailto:web@example.com" title="email-link">이메일 보내기</a>
+            </div>
+
+            <form class="practice-form">
+                <label for="student-id">학번</label>
+                <input id="student-id" type="text" placeholder="20260000" required>
+
+                <label for="major">학과</label>
+                <input id="major" type="text" value="글로벌미디어학부">
+
+                <label for="email">이메일</label>
+                <input id="email" type="email" placeholder="name@example.com">
+
+                <div class="check-row">
+                    <input id="agree" type="checkbox" checked>
+                    <label for="agree">실습 참여에 동의합니다.</label>
+                </div>
+
+                <button type="button" data-state="active">제출 버튼</button>
+            </form>
+        </section>
+
+        <section class="example-box pseudo-demo">
+            <h2>5. 가상 클래스 선택자</h2>
+            <ul class="rank-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+
+            <div class="card-list">
+                <article class="card featured">
+                    <h3>대표 카드</h3>
+                    <p>이 카드는 <code>.featured</code> 클래스를 가집니다.</p>
+                </article>
+                <article class="card">
+                    <h3>일반 카드 1</h3>
+                    <p><code>.card:not(.featured)</code> 예제를 위한 요소입니다.</p>
+                </article>
+                <article class="card">
+                    <h3>일반 카드 2</h3>
+                    <p>마우스를 올리면 hover 효과를 볼 수 있습니다.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
