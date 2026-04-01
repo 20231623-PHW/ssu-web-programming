@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+#circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  border-radius: 9999px;
+  pointer-events: none;
+}
