@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/posts">Back to Posts</a>
+    <a href="/posts/<%= post._id %>/edit">Edit</a>
+    <form action="/posts/<%= post._id %>/delete" method="post">
+        <button type="submit">삭제</button>
+    </form>
+    <h1>
+        <%= post.title %>
+    </h1>
+    <p>
+        ID: <%= post._id %>
+    </p>
+    <p>
+        <%= post.content %>
+    </p>
+</body>
+
+</html>
