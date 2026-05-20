@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기초 CRUD 게시판</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>기초 CRUD 게시판</h1>
+      <a href="/api-docs" target="_blank">Swagger API 문서</a>
+    </header>
+
+    <main>
+      <section class="form-box">
+        <h2 id="formTitle">게시글 작성</h2>
+        <form id="postForm">
+          <input type="hidden" id="postId" />
+
+          <label for="title">제목</label>
+          <input type="text" id="title" placeholder="제목을 입력하세요" />
+
+          <label for="writer">작성자</label>
+          <input type="text" id="writer" placeholder="작성자를 입력하세요" />
+
+          <label for="content">내용</label>
+          <textarea id="content" rows="5" placeholder="내용을 입력하세요"></textarea>
+
+          <div class="button-row">
+            <button type="submit">저장</button>
+            <button type="button" id="cancelButton">취소</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="list-box">
+        <h2>게시글 목록</h2>
+        <div id="postList"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
